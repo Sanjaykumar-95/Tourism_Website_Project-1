@@ -1,0 +1,307 @@
+<html>
+<head>
+  <title>Destination</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    ul li a{
+    font-size: 20px;
+  }
+    a{
+        color: black;
+    }
+    ul li a:hover{
+      color: green;
+      background-color: transparent;
+    }
+    .col-md-12 select:invalid{
+        color: gray;
+    }
+    .col-md-4 .bg-light{
+      box-shadow: 0px 2px 45px 0px black;
+    }
+    .row .col-md-12 h1{
+        font-family: "Nothing You Could Do", cursive;
+        color: white;
+        font-size: 80px;
+    }
+    .row .col-md-12p{
+        font-family: "Rubik", sans-serif;
+        font-size: 18px;
+    }
+    .submit_btn{
+        box-sizing: border-box;
+    }
+    .footer {
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: black;
+            }
+</style>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span><i class="fa fa-bars" aria-hidden="true"></i></span>                       
+      </button>
+      <a class="navbar-brand" href="#"><strong style="font-size: 30px;"><i class="fa fa-compass" aria-hidden="true" style="color: red;"></i> Travilo</strong></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="home.html">Home</a></li>
+        <li class="active"><a href="about.html" target="_blank">About</a></li>
+        <li class="active"><a href="destination.html" target="_blank">Distination</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: green;">Pages<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="Destinationsdetail.html" style="color: green;">Destination details</a></li>
+            <li><a href="elements.html" target="_blank">Elements</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            <p>
+                <i>Contact</i><br>
+                <i class="fa fa-phone" aria-hidden="true" style="color: red;"></i><i>01234 56789</i>
+            </p>
+        </li>
+        <li>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+        </li>
+        <li>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </li>
+        <li>
+          <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-search" aria-hidden="true"></i></button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+            
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Search Places</h4>
+                </div>
+                <div class="modal-body">
+                  <p><input type="text" placeholder="Search" class="form-control"></p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+
+
+  </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--photo part-->
+<div class="col-md-12">
+    <div class="row">
+        <div class="col-md-12" style="background-image: url(destielements.jpg); background-size: cover; height: 500px;">
+            <h1 align="center" style="padding-top: 200px;">Australia</h1>
+            <p align="center" style="color: white;">Pixel Perfect Design With Awesome Contents</p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12" style="background-color: black; text-align: center;">
+        <h3><span style="color: #FFF;">Where you want to go ?  </span>
+          <input type="text" placeholder="Where to go ?" style="background-color: transparent; border: 1px solid gray; padding: 10px; font-size: 20px;">
+          <select name="Date" style="background-color: transparent; border: 1px solid gray; padding: 10px; font-size: 20px;">
+            <option value="" disabled selected hidden>Date</option>
+            <option value="">Sep, 1st</option>
+            <option value="">Sep, 2st</option>
+            <option value="">Sep, 3st</option>
+          </select>
+          <select name="Date" style="background-color: transparent; border: 1px solid gray; padding: 10px; font-size: 20px;">
+            <option value="" disabled selected hidden>Travel Type</option>
+            <option value="">Friends</option>
+            <option value="">Family</option>
+          </select>
+          <button class="btn btn-danger btn-lg" style="font-size: 20px;">Search</button>
+        </h3>
+      </div>
+</div>
+
+<!--Dicription Part-->
+<div class="container" style="padding: 30px;">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-1">
+                    <h2><strong>Description</strong></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 style="color: gray; font-size: 18px;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 style="color: gray; font-size: 18px;">Variations of passages of lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h3><strong>Day-01</strong></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5 style="color: gray; font-size: 18px;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h3><strong>Day-02</strong></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h5 style="color: gray; font-size: 18px;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h3><strong>Day-03</strong></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h5 style="color: gray; font-size: 18px;">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</h5>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><strong>Contact for join</strong></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <input type="text" placeholder="Your Name" class="form-control" style="background-color: lightgray; padding: 25px;">
+                </div>
+                <div class="form-group col-md-6">
+                    <input type="text" placeholder="Phone number" class="form-control" style="background-color: lightgray; padding: 25px;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-12">
+                  <textarea name="" id="" class="form-control" cols="90" rows="8" placeholder="Message" style="background-color: lightgray;"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <div class="submit_btn">
+                        <button class="btn btn-danger form-control" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</div>
+
+
+<div class=""></div>
+
+
+
+
+<br><br><br><br><br><br>
+<!--Footer-->
+<div class="footer">
+  <div class="row" style="padding: 50px;">
+      <div class="col-md-3">
+          <b style="color: white; font-size: 35px;"><i class="fa fa-compass" aria-hidden="true" style="color: red;"></i> Travilo</b><br>
+          <h6 style="color: gray;">5th flora, 700/D kings road, green<br>
+            lane New York-1782<br>
+            +10 367 826 2567<br>
+            contact@carpenter.com</h6>
+            <br><br><br>
+          <div class="col-md-2"><a href=""><i class="fa fa-facebook" aria-hidden="true" style="color: gray;"></i></a></div>
+          <div class="col-md-2"><a href=""><i class="fa fa-twitter" aria-hidden="true" style="color: gray;"></i></a></div>
+          <div class="col-md-2"><a href=""><i class="fa fa-instagram" aria-hidden="true" style="color: gray;"></i></a></div>
+          <div class="col-md-2"><a href=""><i class="fa fa-youtube-play" aria-hidden="true" style="color: gray;"></i></a></div>
+      </div>
+      <div class="col-md-3">
+          <b style="color: white; font-size: 20px;">Company</b><br><br>
+          <h5><a href="" style="color: gray;">Pricing</a><br><br>
+            <a href=""  style="color: gray;">About</a><br><br>
+            <a href="" style="color: gray;">Gallery</a><br><br>
+            <a href="" style="color: gray;">Contact</a>
+          </h5>
+      </div>
+      <div class="col-md-3">
+          <b style="color: white; font-size: 20px;">Popular Destination</b><br><br>
+          <h5 style="color: gray;">Indonesia &emsp; &emsp; America</h5>
+          <h5 style="color: gray;">India &emsp; &emsp; &emsp;   Switzerland</h5>
+          <h5 style="color: gray;">Italy &emsp; &emsp; &emsp;     Canada</h5>
+          <h5 style="color: gray;">Franch &emsp; &emsp; &emsp; England</h5>
+      </div>
+
+      <div class="col-md-3">
+        <b style="color: white; font-size: 20px;">Instagram</b><br><br>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="indonesia.jpg" width="60px" height="50px">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="california.jpg" alt="" width="60px" height="50px">
+            </div>
+          </div>&emsp;
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="australia.jpg" alt="" width="60px" height="50px">
+            </div>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="paris.jpg" width="60px" height="50px">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="london.jpg" alt="" width="60px" height="50px">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="switzerland.jpg" alt="" width="60px" height="50px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<html>
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+  ul li a {
+    font-size: 20px;
+  }
+
+  a {
+    color: black;
+  }
+
+  ul li a:hover {
+    color: green;
+    background-color: transparent;
+  }
+
+  .col-md-12 select:invalid {
+    color: gray;
+  }
+
+  .col-md-4 .bg-light {
+    box-shadow: 0px 2px 45px 0px black;
+  }
+
+  .main h1 {
+    font-family: Edwardian Script ITC;
+    color: white;
+    font-size: 180px;
+    padding-top: 200px;
+  }
+
+  @media screen and (max-width: 320px) {
+    .main h1 {
+      font-family: Edwardian Script ITC;
+      color: white;
+      font-size: 100px;
+      padding-top: 200px;
+    }
+  }
+
+  @media screen and (max-width: 320px) {
+    .main h1 span {
+      font-family: Edwardian Script ITC;
+      color: white;
+      font-size: 80px;
+      padding-top: 200px;
+    }
+  }
+
+  .main p {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+  }
+
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+  }
+</style>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span><i class="fa fa-bars" aria-hidden="true"></i></span>
+        </button>
+        <a class="navbar-brand" href="#"><strong style="font-size: 30px;"><i class="fa fa-compass" aria-hidden="true"
+              style="color: red;"></i> Travilo</strong></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="home.html" style="color: green;">Home</a></li>
+          <li><a href="about.html" target="_blank">About</a></li>
+          <li><a href="destination.html" target="_blank">Distination</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Pages<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="Destinationsdetail.html">Destination details</a></li>
+              <li><a href="elements.html" target="_blank">Elements</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <p>
+              <i>Contact</i><br>
+              <i class="fa fa-phone" aria-hidden="true" style="color: red;"></i><i>01234 56789</i>
+            </p>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal"><i
+                class="fa fa-search" aria-hidden="true"></i></button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+              <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Search Places</h4>
+                  </div>
+                  <div class="modal-body">
+                    <p><input type="text" placeholder="Search" class="form-control"></p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--Sliding part-->
+  <div class="main">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="item active" style="background-image: url(indonesia.jpg); background-size: cover; height: 600px;">
+          <h1 style="font-family: Edwardian Script ITC; text-align: center;">Indonesia</h1>
+          <p>Pixel perfect design with awesome contents</p>
+          <p style="text-align: center;"><button class="btn btn-lg btn-success">Explore</button></p>
+        </div>
+
+        <div class="item" style="background-image: url(australia.jpg); height: 600px; background-size: cover;">
+          <h1 style="font-family: Edwardian Script ITC; text-align: center;">Australia</h1>
+          <p>Pixel perfect design with awesome contents</p>
+          <p style="text-align: center;"><button class="btn btn-lg btn-success">Explore</button></p>
+        </div>
+
+        <div class="item" style="background-image: url(london.jpg); height: 600px; background-size: cover;">
+          <h1 style="font-family: Edwardian Script ITC; text-align: center;">London</h1>
+          <p>Pixel perfect design with awesome contents</p>
+          <p style="text-align: center;"><button class="btn btn-lg btn-success">Explore</button></p>
+        </div>
+        <div class="item" style="background-image: url(switzerland.jpg); height: 600px; background-size: cover;">
+          <h1 style="font-family: Edwardian Script ITC; text-align: center;"><span>Switzerland</span></h1>
+          <p>Pixel perfect design with awesome contents</p>
+          <p style="text-align: center;"><button class="btn btn-lg btn-success">Explore</button></p>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="col-md-12" style="background-color: black; text-align: center;">
+    <h3><span style="color: #FFF;">Where you want to go ? </span>
+      <input type="text" placeholder="Where to go ?"
+        style="background-color: transparent; border: 1px solid gray; padding: 10px; font-size: 20px; color: #FFF;">
+
+      <select name="Date"
+        style="background-color: transparent; border: 1px solid gray; padding: 10px; font-size: 20px;">
+        <option value="" disabled selected hidden>Date</option>
+        <option value="">Sep, 1st</option>
+        <option value="">Sep, 2st</option>
+        <option value="">Sep, 3st</option>
+      </select>
+
+      <select name="Date"
+        style="background-color: transparent; border: 1px solid gray; padding: 10px; font-size: 20px;">
+        <option value="" disabled selected hidden><b style="color: red;">Travel Type</b></option>
+        <option value="">Friends</option>
+        <option value="">Family</option>
+      </select>
+      <button class="btn btn-danger btn-lg" style="font-size: 20px;">Search</button>
+
+
+    </h3>
+  </div>
+
+  <!--Places-->
+  <div class="container" style=" padding: 159px 13px;">
+    <div class="row">
+      <div class="col-md-12" style="text-align: center;">
+        <h2>Popular Places</h2>
+        <h5>Suffered alteration in some form, by injected humour or good day<br>randomised booth anim 8-bit hella wolf
+          moon beard words.</h5>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 20px;">
+      <div class="col-md-4">
+        <div class="bg-light">
+          <img src="california.jpg" height="190px" width="100%"
+            style="padding: 10px; border-radius: 20px; object-fit: cover;">
+          <figcaption align="left" style="padding: 10px;">
+            <h2>California</h2>
+            <h5 style="color: gray;">United State of America</h5>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-light">
+          <img src="paris.jpg" height="190px" width="100%"
+            style="padding: 10px; border-radius: 20px; object-fit: cover;">
+          <figcaption align="left" style="padding: 10px;">
+            <h2>Paris</h2>
+            <h5 style="color: gray;">United State of America</h5>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-light">
+          <img src="london.jpg" height="190px" width="100%"
+            style="padding: 10px; border-radius: 20px; object-fit: cover;">
+          <figcaption align="left" style="padding: 10px;">
+            <h2>London</h2>
+            <h5 style="color: gray;">United State of America</h5>
+          </figcaption>
+        </div>
+      </div>
+    </div><br><br>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="bg-light">
+          <img src="indonesia.jpg" height="190px" width="100%"
+            style="padding: 10px; border-radius: 20px; object-fit: cover;">
+          <figcaption align="left" style="padding: 10px;">
+            <h2>Indonesia</h2>
+            <h5 style="color: gray;">United State of America</h5>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-light">
+          <img src="miami.jpg" height="190px" width="100%"
+            style="padding: 10px; border-radius: 20px; object-fit: cover;">
+          <figcaption align="left" style="padding: 10px;">
+            <h2>Miami</h2>
+            <h5 style="color: gray;">United State of America</h5>
+          </figcaption>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="bg-light">
+          <img src="santisland.jpg" height="190px" width="100%"
+            style="padding: 10px; border-radius: 20px; object-fit: cover;">
+          <figcaption align="left" style="padding: 10px;">
+            <h2>Saintmartine Iceland</h2>
+            <h5 style="color: gray;">United State of America</h5>
+          </figcaption>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 50px;">
+      <div class="col-md-12">
+        <p align="center"><button class="btn btn-lg btn-danger">More Places</button></p>
+      </div>
+    </div>
+  </div>
+
+  <!--Travel Types-->
+  <div class="container" style=" padding: 159px 13px;">
+    <div class="col-md-4" style="text-align: center;">
+      <i class="fa fa-train" aria-hidden="true" style="font-size: 80px; color: red;"></i>
+      <h3>Comfortable Journey</h3>
+      <h5>A wonderful serenity has taken to the possession of my entire soul.</h5>
+    </div>
+    <div class="col-md-4" style="text-align: center;">
+      <i class="fa fa-bed" aria-hidden="true" style="font-size: 80px; color: red;"></i>
+      <h3>Luxuries Hotel</h3>
+      <h5>A wonderful serenity has taken to the possession of my entire soul.</h5>
+    </div>
+    <div class="col-md-4" style="text-align: center;">
+      <i class="fa fa-globe" aria-hidden="true" style="font-size: 80px; color: red;"></i>
+      <h3>Travel Guide</h3>
+      <h5>A wonderful serenity has taken to the possession of my entire soul.</h5>
+    </div>
+  </div>
+
+  <!--Footer-->
+  <div class="footer">
+    <div class="row" style="padding: 50px;">
+      <div class="col-md-3">
+        <b style="color: white; font-size: 35px;"><i class="fa fa-compass" aria-hidden="true" style="color: red;"></i>
+          Travilo</b><br>
+        <h6 style="color: gray;">5th flora, 700/D kings road, green<br>
+          lane New York-1782<br>
+          +10 367 826 2567<br>
+          contact@carpenter.com</h6>
+        <br><br><br>
+        <div class="col-md-2"><a href=""><i class="fa fa-facebook" aria-hidden="true" style="color: gray;"></i></a>
+        </div>
+        <div class="col-md-2"><a href=""><i class="fa fa-twitter" aria-hidden="true" style="color: gray;"></i></a></div>
+        <div class="col-md-2"><a href=""><i class="fa fa-instagram" aria-hidden="true" style="color: gray;"></i></a>
+        </div>
+        <div class="col-md-2"><a href=""><i class="fa fa-youtube-play" aria-hidden="true" style="color: gray;"></i></a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <b style="color: white; font-size: 20px;">Company</b><br><br>
+        <h5><a href="" style="color: gray;">Pricing</a><br><br>
+          <a href="" style="color: gray;">About</a><br><br>
+          <a href="" style="color: gray;">Gallery</a><br><br>
+          <a href="" style="color: gray;">Contact</a>
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <b style="color: white; font-size: 20px;">Popular Destination</b><br><br>
+        <h5 style="color: gray;">Indonesia &emsp; &emsp; America</h5>
+        <h5 style="color: gray;">India &emsp; &emsp; &emsp; Switzerland</h5>
+        <h5 style="color: gray;">Italy &emsp; &emsp; &emsp; Canada</h5>
+        <h5 style="color: gray;">Franch &emsp; &emsp; &emsp; England</h5>
+      </div>
+
+      <div class="col-md-3">
+        <b style="color: white; font-size: 20px;">Instagram</b><br><br>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="indonesia.jpg" width="60px" height="50px">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="california.jpg" alt="" width="60px" height="50px">
+            </div>
+          </div>&emsp;
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="australia.jpg" alt="" width="60px" height="50px">
+            </div>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="paris.jpg" width="60px" height="50px">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="london.jpg" alt="" width="60px" height="50px">
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="bg-light" style="padding: 10px -10px;">
+              <img src="switzerland.jpg" alt="" width="60px" height="50px">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
